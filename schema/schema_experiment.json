@@ -1,17 +1,5 @@
 {
 	"definitions": {
-		"arrayOfNumbers": {
-			"type": "array",
-			"items": {
-				"type": "number"
-			}
-		},
-		"arrayOfArraysOfNumbers": {
-			"type": "array",
-			"items": {
-				"$ref": "#/definitions/arrayOfNumbers"
-			}
-		}
 	},
 	"properties": {
 		"id": {
@@ -60,15 +48,15 @@
 		},
 		"test_type": {
 			"type": "string",
-			"description": "The type of test generally describing the condition under which the specimen was loaded, e.g., monotonic, quasi-static, dynamic.",
+			"description": "The type of test generally describing the condition under which the specimen was loaded. Where applicable, one of the following seven test_types should be selected: <'Dynamic, uniaxial', 'Dynamic, bi-directional', 'Dynamic, 3D', 'Monotonic, compression', 'Monotonic, tension', 'Quasi-static Cyclic, uniaxial', 'Quasi-static Cyclic, bi-directional'>",
 		},
-		"gm_record": {
+		"loading_protocol": {
 			"type": "string",
-			"description": "Name or ID or the ground motion or loading protocol used in the test.",
+			"description": "Name, ID, or general description of the ground motion or loading protocol used in the test.",
 		},
 		"peak_test_amplitude": {
 			"type": "string",
-			"description": "The maximum amplitude to which this test was performed",
+			"description": "The maximum amplitude to which this test was performed. Descrition should include both the amplitude value, metric, and unit (e.g., 1.5 g Peak Ground Acceleration).",
 		},
 		"location": {
 			"type": "string",
@@ -88,11 +76,11 @@
 		},
 		"proir_damage": {
 			"type": "string",
-			"description": "Description of any prior damage that was noted during a previous test of this specimen. Empty if no prior damage was noted.",
+			"description": "Description of any prior damage that was noted during a previous test of this specimen. Should also describe if and how the specimen was repaired prior to this test. Empty if no prior damage was noted.",
 		},
 		"is_repaired": {
 			"type": "boolean",
-			"description": "True if prior damage was noted and repaired prior to this test.",
+			"description": "TRUE if prior damage was noted and repaired prior to this test. FALSE if prior damage was noted and not repiared.",
 		},
 		"ds_intensity": {
 			"type": "number",
@@ -100,7 +88,7 @@
 		},
 		"ds_intensity_unit": {
 			"type": "string",
-			"description": "Unit of peak test amplitude at the onset of observed damage. Typically recorded in terms of building response or ground motion intensty measures that show the best correlation with damage to the component.",
+			"description": "Unit of peak test amplitude at the onset of observed damage. Typically recorded in terms of building response or ground motion intensty measures that show the best correlation with damage to the component. Where applicable, one of the following seven units should be selected: <'Story Drift Ratio', 'Story Drift Ratio, bi-directional', 'Peak Floor Acceleration, Horizontal (g)', 'Peak Floor Acceleration, Vertical (g)'>. For other metrics that don’t fit in these bins, provide an in kind unit name (metric followed by unit in paranthesis, e.g., 'Force, compression (kips)').",
 		},
 		"ds_intensity_alt": {
 			"type": "number",
@@ -116,7 +104,7 @@
 		},
 		"ds_class": {
 			"type": "string",
-			"description": "Classification of observed damage into one of the three categories: No damage, Inconsequential, Consequential.",
+			"description": "Classification of observed damage into one of the three categories: <'No damage', 'Inconsequential', 'Consequential'>. Where damage is unclear, select 'Unknown'.",
 		},
 		"notes": {
 			"type": "string",
