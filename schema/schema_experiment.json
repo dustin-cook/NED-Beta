@@ -100,7 +100,7 @@
 		},
 		"ds_rank": {
 			"type": "integer",
-			"description": "Damage state rank provided by the investator (e.g., first, second, third sequencial damage state observed). Empty if none provided by the investigator.",
+			"description": "Damage state rank provided by the investigator (e.g., first, second, third sequencial damage state observed). Empty if none provided by the investigator.",
 		},
 		"ds_class": {
 			"type": "string",
