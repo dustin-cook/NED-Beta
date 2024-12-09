@@ -4,7 +4,12 @@
 #### Nonstructural Element Database
 This repository provides remote hosting and version control for the development of NED, the Nonstructural Element Database. NED is a relational database that collects information from experimental, anayltical, and historic performance observations of nonstructural building elements into seismic fragilities and consequence models to support building-specific seismic performance research and assessments. Currenlty, the project is still in its early development phase and does not yet have consequence models or data from historical events, but has collected over 1500 expermental data points and compiled a fragility data set that includes and expands upon the full FEMA P-58 nonstructural database. The experimental test data and seismic fragility are explictitly realate through primary and foreign key architecture within the database to promote data transparency and reuse. Once completed, NED will be hosted on a stable and scalable web-based backend framework with restful API access points and a stand alone GUI for use by engineers and researchers.
 
-### Repository Organization
+## Database Architecture
+The goal of this project is to develop a robust and scalable database of fragility and consequence models of nonstructural building elements for seismic performance evaluation. Data is organized in a way such that each data table represents an abtract portion of the fragility model, e.g., serperating observations of component performance from an experimentantal test from that of a fragility model and repair costs consequence models. It that way, that data is both nimble/scalable with new information and can be clearly linked back to original source data and models through explicit relational keys. The outcomes of this project will expand the applicability of performance- and recovery-based earthquake assessments, resulting in a publicly available database to support current research and building design. The figure below outlines the current portions of the database under development and future development plans.
+ 
+![image](https://github.com/user-attachments/assets/bdc7e08a-554e-4cfc-9a85-e0cfb10a2cad)
+
+## Repository Organization
 - **data** - database tables. Currently implmented as csv tables with attributes defined as column headers.
 - **scehma** - data schema for each table in the *data* directory. Currenlty implemented as json files that provide the name, datatype, and description of each attribute (column) within each csv data table.
 - **visualization** - Juptyer notebook visualization and data interfacing scripts. Low-code alternative for developing GUI interactions. These scripts are usefull if you want to explore and visualize what data is available within the current database.
