@@ -1,4 +1,4 @@
-id,sub-element,element_id,element,group_id,group,major_group_id,major_group
+id,sub_element,element_id,element,group_id,group,major_group_id,major_group
 A1011,Wall Foundations,A1010,Standard Foundations,A10,Foundations,A,Substructure
 A1012,Column Foundations & Pile Caps,A1010,Standard Foundations,A10,Foundations,A,Substructure
 A1013,Perimeter Drainage & Insulation,A1010,Standard Foundations,A10,Foundations,A,Substructure
@@ -253,8 +253,8 @@ F1011,Air Supported Structures,F1010,Special Structures,F10,Special Construction
 F1012,Pre-engineered Structures,F1010,Special Structures,F10,Special Construction,F,Special Construction & Demolition
 F1013,Other Special Structures,F1010,Special Structures,F10,Special Construction,F,Special Construction & Demolition
 F1021,Integrated Assemblies,F1020,Integrated Construction,F10,Special Construction,F,Special Construction & Demolition
-F2022,Special Purpose Rooms,F1020,Integrated Construction,F10,Special Construction,F,Special Construction & Demolition
-F2023,Other Integrated Construction,F1020,Integrated Construction,F10,Special Construction,F,Special Construction & Demolition
+F1022,Special Purpose Rooms,F1020,Integrated Construction,F10,Special Construction,F,Special Construction & Demolition
+F1023,Other Integrated Construction,F1020,Integrated Construction,F10,Special Construction,F,Special Construction & Demolition
 F1031,"Sound, Vibration & Seismic Const.",F1030,Special Construction Systems,F10,Special Construction,F,Special Construction & Demolition
 F1032,Radiation Protection,F1030,Special Construction Systems,F10,Special Construction,F,Special Construction & Demolition
 F1033,Special Security Systems,F1030,Special Construction Systems,F10,Special Construction,F,Special Construction & Demolition
