@@ -1,5 +1,5 @@
 # NED-Beta
-> "Turning data into resilience one function at a time" - J.B.
+**THIS REPOSITORY HAS BEEN MIGRATED TO @USNISTGOV/NED**
 
 #### Nonstructural Element Database
 This repository provides remote hosting and version control for the development of NED, the Nonstructural Element Database. NED is a relational database that collects information from experimental, anayltical, and historic performance observations of nonstructural building elements into seismic fragilities and consequence models to support building-specific seismic performance research and assessments. Currenlty, the project is still in its early development phase and does not yet have consequence models or data from historical events, but has collected over 1500 expermental data points and compiled a fragility data set that includes and expands upon the full FEMA P-58 nonstructural database. The experimental test data and seismic fragility are explictitly realate through primary and foreign key architecture within the database to promote data transparency and reuse. Once completed, NED will be hosted on a stable and scalable web-based backend framework with restful API access points and a stand alone GUI for use by engineers and researchers.
